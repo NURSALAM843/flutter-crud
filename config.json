@@ -1,0 +1,10 @@
+{
+    "state_management": "Getx",
+    "openai_key": "",
+    "modules": [
+        "login",
+        "registrasi",
+        "order",
+        "form_order"
+    ]
+}
