@@ -1,5 +1,4 @@
 {
-    "state_management": "Getx",
     "openai_key": "",
     "modules": [
         "login",

@@ -3,7 +3,8 @@ import 'package:flutter_hyper_ui/core.dart';
 import 'package:get/get.dart';
 
 class FormOrderView extends StatelessWidget {
-  const FormOrderView({Key? key}) : super(key: key);
+  final Map? item;
+  const FormOrderView({Key? key, this.item}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,9 +30,7 @@ class FormOrderView extends StatelessWidget {
           ),
           floatingActionButton: FloatingActionButton(
             child: const Icon(Icons.save),
-            onPressed: () {
-              //
-            },
+            onPressed: () => controller.doSave(),
           ),
           body: SingleChildScrollView(
             child: Padding(
@@ -42,28 +41,28 @@ class FormOrderView extends StatelessWidget {
                     child: Padding(
                       padding: const EdgeInsets.all(20.0),
                       child: Column(
-                        children: const [
+                        children: [
                           ExImagePicker(
                             id: "photo",
                             label: "Photo",
-                            // value: "https://i.ibb.co/PGv8ZzG/me.jpg",
+                            value: item == null ? null : item!["photo"],
                           ),
                           ExTextField(
                             id: "name",
                             label: "name",
                             keyboardType: TextInputType.text,
-                            value: null,
+                            value: item == null ? null : item!["name"],
                           ),
                           ExTextField(
                             id: "price",
                             label: "Price",
                             keyboardType: TextInputType.number,
-                            value: null,
+                            value: item == null ? null : item!["price"],
                           ),
                           ExTextArea(
                             id: "deskripsi",
                             label: "Decription",
-                            value: null,
+                            value: item == null ? null : item!["deskripsi"],
                           ),
                         ],
                       ),

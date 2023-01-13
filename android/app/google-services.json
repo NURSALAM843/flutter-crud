@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "91692008050",
+    "project_id": "belajarflutter-5118b",
+    "storage_bucket": "belajarflutter-5118b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:91692008050:android:696e4cb10595648e7af8eb",
+        "android_client_info": {
+          "package_name": "com.capekngoding.flutter_hyper_ui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "91692008050-qv0gmbtv6ds44a6770nbcooab6gmp83g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDAwIsfveJQSJi398tLTdKUT43L3brmTWg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "91692008050-qv0gmbtv6ds44a6770nbcooab6gmp83g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

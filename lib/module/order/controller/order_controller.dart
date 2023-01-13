@@ -3,6 +3,7 @@ import '../view/order_view.dart';
 
 class OrderController extends GetxController {
   OrderView? view;
+  String search = "";
 
   @override
   void onInit() {

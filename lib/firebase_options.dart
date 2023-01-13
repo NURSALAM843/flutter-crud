@@ -53,10 +53,10 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA5ySyAFAohJWesDG32FvB0L7JW18i7k8U',
-    appId: '1:980120019445:android:b1d020aada02716ee340bc',
-    messagingSenderId: '980120019445',
-    projectId: 'fir-berandal',
-    storageBucket: 'fir-berandal.appspot.com',
+    apiKey: 'AIzaSyDAwIsfveJQSJi398tLTdKUT43L3brmTWg',
+    appId: '1:91692008050:android:696e4cb10595648e7af8eb',
+    messagingSenderId: '91692008050',
+    projectId: 'belajarflutter-5118b',
+    storageBucket: 'belajarflutter-5118b.appspot.com',
   );
 }
