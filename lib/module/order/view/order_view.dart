@@ -18,9 +18,7 @@ class OrderView extends StatelessWidget {
             title: const Text("Order"),
             actions: [
               IconButton(
-                onPressed: () {
-                  Get.offAll(const LoginView());
-                },
+                onPressed: () => controller.doLogout(),
                 icon: const Icon(
                   Icons.logout,
                   size: 24.0,

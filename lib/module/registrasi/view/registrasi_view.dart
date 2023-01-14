@@ -38,13 +38,8 @@ class RegistrasiView extends StatelessWidget {
                           ),
                         ),
                         const ExTextField(
-                          id: "fullname",
-                          label: "Full Name",
-                          value: null,
-                        ),
-                        const ExTextField(
-                          id: "username",
-                          label: "Username",
+                          id: "email",
+                          label: "Email",
                           value: null,
                         ),
                         const ExTextField(
@@ -59,9 +54,7 @@ class RegistrasiView extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blueGrey,
                           ),
-                          onPressed: () {
-                            Get.offAll(const LoginView());
-                          },
+                          onPressed: () => controller.doRegister(),
                         ),
                       ],
                     ),

@@ -36,8 +36,8 @@ class LoginView extends StatelessWidget {
                               fontSize: 20.0, fontWeight: FontWeight.bold),
                         ),
                         const ExTextField(
-                          id: "username",
-                          label: "Username",
+                          id: "email",
+                          label: "Email",
                           value: null,
                         ),
                         const ExTextField(
@@ -52,9 +52,7 @@ class LoginView extends StatelessWidget {
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Colors.blueAccent,
                           ),
-                          onPressed: () {
-                            Get.offAll(const OrderView());
-                          },
+                          onPressed: () => controller.doLogin(),
                         ),
                         ElevatedButton.icon(
                           icon: const Icon(Icons.app_registration),

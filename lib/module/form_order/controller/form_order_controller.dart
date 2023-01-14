@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter_hyper_ui/core.dart';
 import 'package:get/get.dart';
 import '../view/form_order_view.dart';
@@ -45,5 +46,10 @@ class FormOrderController extends GetxController {
       });
     }
     Get.back();
+  }
+
+  doLogout() async {
+    await FirebaseAuth.instance.signOut();
+    Get.offAll(const LoginView());
   }
 }
